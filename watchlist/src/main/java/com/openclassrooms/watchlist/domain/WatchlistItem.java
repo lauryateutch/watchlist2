@@ -1,9 +1,15 @@
-package com.openclassrooms.watchlist;
+package com.openclassrooms.watchlist.domain;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 public class WatchlistItem {
+    public String priority;
+    //@NotBlank(message = "this can't be blank")
     private String title;
     private String rating;
-    private String priority;
+   //private String priority;
+   // @Size(max=50, message="at most 50 characters")
     private String comment;
     private Integer id;
 
